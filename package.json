@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "build": "bun build src/index.ts --outdir dist --target bun --format esm && tsc --emitDeclarationOnly && cp -r src/skills/builtin dist/skills/",
+    "build": "bun build src/index.ts --outdir dist --target bun --format esm && tsc --emitDeclarationOnly && cp -r src/skills/builtin dist/skills/ && cp -r src/agents/builtin dist/agents/",
     "dev": "bun build src/index.ts --outdir dist --target bun --format esm --watch",
     "type-check": "tsc --noEmit"
   },
